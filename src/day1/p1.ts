@@ -1,6 +1,9 @@
+import { fileURLToPath } from 'url'
+import { dirname, join } from 'path'
 import fs from 'fs/promises'
 
-const input = await fs.readFile('./src/day1/input.txt', 'utf8')
+const file = join(dirname(fileURLToPath(import.meta.url)), 'input.txt')
+const input = await fs.readFile(file, 'utf8')
 
 let increases = 0
 const depths = input
