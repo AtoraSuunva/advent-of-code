@@ -27,3 +27,12 @@ The part 2 solution is significantly faster (even faster than part 1 _while_ che
 But the memory usage is negligible at the size of input, so a perfectly fine compromise.
 
 Part 1 is left as-is and unoptimized to show the power of caching and optimization :)
+
+---
+
+Using unix's `time` to (roughly) benchmark, using 10 samples:
+
+Part 1: ~1.550s per run
+Part 2: ~0.386s per run (~301.554% faster!!)
+
+Part 1 is slower even when not considering diagonals
