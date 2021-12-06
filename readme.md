@@ -17,9 +17,11 @@ Overengineered with [Prettier](https://prettier.io/) and [ESLint](https://eslint
 npm install
 
 # Run a solution once
-npx ts-node src/day1/p1.ts
+npm run once src/day1/p1.ts
 
 # Run a solution and watch for changes
+npm run watch src/day1/p1.ts
+# or
 npx nodemon src/day1/p1.ts
 ```
 

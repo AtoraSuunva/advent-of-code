@@ -5,6 +5,8 @@
   "description": "advent of code",
   "main": "src/index.ts",
   "scripts": {
+    "once": "node --loader ts-node/esm",
+    "watch": "npx nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "AtoraSuunva",
