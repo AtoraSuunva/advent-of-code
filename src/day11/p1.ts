@@ -110,7 +110,9 @@ class Matrix<T> implements Iterable<MatrixCell<T>> {
   }
 
   toString() {
-    return this.values.map((row) => row.map((v) => v + '').join('')).join('\n')
+    return this.values
+      .map((row) => row.map((v) => String(v)).join(''))
+      .join('\n')
   }
 
   *[Symbol.iterator](): Iterator<MatrixCell<T>, void, undefined> {

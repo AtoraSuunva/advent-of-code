@@ -99,7 +99,7 @@ class Board {
 
     this.board = new Array(this.height)
       .fill(0)
-      .map(() => new Array(this.width).fill(0))
+      .map(() => new Array(this.width).fill(0) as number[])
 
     const points = this.lines.flatMap((line) => line.points)
 

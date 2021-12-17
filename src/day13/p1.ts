@@ -97,7 +97,7 @@ class Paper {
   toString() {
     const grid = Array(this.height + 1)
       .fill(0)
-      .map(() => Array(this.width + 1).fill('.'))
+      .map(() => Array(this.width + 1).fill('.') as string[])
 
     this.dots.forEach((dot) => {
       grid[dot.y][dot.x] = '#'

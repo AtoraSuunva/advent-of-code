@@ -12,7 +12,7 @@ const lanternFish = input
 const DAYS = 256
 // Index of array maps from timer to number of fish at that timer
 // ie. `fishes[0]` is the number of fish with timer 0
-const fishes: number[] = new Array(9).fill(0)
+const fishes: number[] = new Array(9).fill(0) as number[]
 // Need to get the initial amount of fish at each timer too
 // Map<timer, numberOfFish>
 const fishCount = new Map<number, number>()

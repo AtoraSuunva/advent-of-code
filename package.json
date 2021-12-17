@@ -7,6 +7,7 @@
   "scripts": {
     "once": "node --loader ts-node/esm",
     "watch": "npx nodemon",
+    "lint": "eslint src/**/*.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "AtoraSuunva",

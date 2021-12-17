@@ -86,7 +86,7 @@ class Board {
 
     this.board = new Array(this.height)
       .fill(0)
-      .map(() => new Array(this.width).fill(0))
+      .map(() => new Array(this.width).fill(0) as number[])
 
     for (let y = 0; y < this.height; y++) {
       for (let x = 0; x < this.width; x++) {
