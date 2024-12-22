@@ -1,0 +1,39 @@
+{
+  "name": "aoc-2023",
+  "version": "1.0.0",
+  "description": "Advent of Code",
+  "type": "module",
+  "scripts": {
+    "once": "node --loader ts-node/esm",
+    "watch": "npx nodemon",
+    "lint": "eslint src/ && prettier --check src/ && tsc --noEmit",
+    "lint:fix": "eslint src/ --fix && prettier --write src/ && prisma format && tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtoraSuunva/advent-of-code.git"
+  },
+  "author": "AtoraSuunva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AtoraSuunva/advent-of-code/issues"
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "homepage": "https://github.com/AtoraSuunva/advent-of-code#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/node": "~20.10.2",
+    "@typescript-eslint/eslint-plugin": "~6.13.1",
+    "@typescript-eslint/parser": "~6.13.1",
+    "eslint": "~8.55.0",
+    "eslint-config-prettier": "~9.1.0",
+    "eslint-plugin-import": "~2.29.0",
+    "nodemon": "^3.0.2",
+    "prettier": "~3.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.3.2"
+  }
+}
